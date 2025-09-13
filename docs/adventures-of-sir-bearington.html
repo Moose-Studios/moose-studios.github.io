@@ -33,40 +33,130 @@
             <section>
                 <h2>Activity Log</h2>
                 <div class="activity-entry">
-                    <h3>September 5, 2025 - Updated UI Healthbars</h3>
-                    <p>-Created custom healthbars to allow the game to be able to split the UI into its own scene</p>
-                    <img src="images/image32.png" alt="Image of the new UI bars">
+                    <h3>September 8, 2025 - UI Scene Implemented</h3>
+                    <p>-Removed references to QuantityBhv</p>
+                    <p>-Added Main Menu button from the pause UI</p>
+                    <p>-Implemented UI scene that now works</p>
                 </div>
                 <div class="activity-entry">
-                    <h3>April 21, 2025 - Tooltip Update</h3>
+                    <h3>September 7, 2025 - Minor UI update</h3>
+                    <p>-Moved GameManager into the UI scene</p>
+                </div>
+                <div class="activity-entry">
+                    <h3>September 5, 2025 - Updated UI Healthbars</h3>
+                    <p>-Removed the use of minimalist asset bars, added my own custom UI bars to allow to split the UI into its own scene</p>
+                    <p>-Replaced HP,Mana,XP bars with my own custom ones</p>
+                    <img src="images/image32.png" alt="Image of the new UI bars" >
+                </div>
+                <div class="activity-entry">
+                    <h3>September 3, 2025 - Load list of scenes, UI scene</h3>
+                    <p>-Added a way to pass a list of scenes to load</p>
+                    <p>-added UI scene</p>
+                </div>
+                <div class="activity-entry">
+                    <h3>August 24, 2025 - Additive scene update</h3>
+                    <p>-Added a First Loading Scene, the first scene that loads before main menu</p>
+                    <p>-Added a Loading scene, this is called between scene changes ex main menu to the game</p>
+                    <p>-Added a way to load scenes with scene names</p>
+                    <p>-Updated project settings, added company, version, and product name</p>
+                </div>
+                <div class="activity-entry">
+                    <h3>August 2, 2025 - Main Menu Update</h3>
+                    <p>-Created a Main Menu</p>
+                    <p>-Updated README.md to include the trello board</p>
+                </div>
+                <div class="activity-entry">
+                    <h3>April 21, 2025 - ToolTip and interaction refactoring update</h3>
                     <p>-Added tooltips to items and abilities</p>
+                    <p>Refactored interaction to allow Interactable class to be inherited</p>
                     <img src="images/image30.png" alt="Image of a tooltip for an ability">
                     <img src="images/image31.png" alt="Image of a tooltip for an item">
                 </div>
-
                 <div class="activity-entry">
-                    <h3>April 20, 2025 - New Healing Ability</h3>
-                    <p>-Added a healing ability</p>
+                    <h3>April 20, 2025 - New Ability Added, ability cooldowns</h3>
+                    <p>-Abilities now show cooldown on the actionbar</p>
+                    <p>-Added a new ability that heals the player. It scales with INT, spawns Scrolling Combat Text, and has an effect</p>
+                    <img src="images/image27.png" alt="Image of the action bar with a skill on cooldown" >
                     <img src="images/image28.png" alt="Image of the player getting healed">
                     <img src="images/image29.png" alt="Image of the healing ability icon on cooldown">
                 </div>
-
                 <div class="activity-entry">
-                    <h3>April 20, 2025 - Ability Cooldown Update</h3>
-                    <p>-Added a visual indicator to show that the ability is still on cooldown</p>
-                    <img src="images/image27.png" alt="Image of the action bar with a skill on cooldown">
+                    <h3>April 19, 2025 - Updated Window Handling, and Pause Menu</h3>
+                    <p>-Talents cant be open when character and inventory UI is</p>
+                    <p>-Cant open Talents, Character UI, or inventory when paused. Will automatically close pause menu</p>
+                    <p>-Enemies damage scales with levels</p>
+                    <p>-Updated pause menu UI</p>
                 </div>
-
                 <div class="activity-entry">
-                    <h3>April 14, 2025 - Added a Talent Tree and Action Bar</h3>
-                    <p>-Added the first iteration of the talent tree, and an action bar. The player is able to move skills from the talent tree to the action bar</p>
-                    <img src="images/image26.png" alt="Image of the talent tree and action bar">
+                    <h3>April 16, 2025 - Enemies Update</h3>
+                    <p>-Enemies attack when they get close to the player</p>
                 </div>
-
                 <div class="activity-entry">
-                    <h3>April 14, 2025 - Character Panel Update</h3>
-                    <p>-Added a character Panel with equipped items, and player stats</p>
-                    <img src="images/image25.png" alt="Image of the players inventory and character panel open">
+                    <h3>April 15, 2025 - Added a dropped template</h3>
+                    <p>-Added a dropped template</p>
+                    <p>-Added a starting sword</p>
+                    <p>-Added a mana flask asset</p>
+                </div>
+                <div class="activity-entry">
+                    <h3>April 12, 2025 - Added lifespan to items, and enemy update</h3>
+                    <p>-Items that are dropped now have a timer before they get removed from the world</p>
+                    <p>-Enemies code was refactored and now have armor and levels</p>
+                </div>
+                <div class="activity-entry">
+                    <h3>April 11, 2025 - UI update and Mana Use</h3>
+                    <p>-Updated UI to use new bars</p>
+                    <p>-Implemented mana, health + mana regen</p>
+                    <p>-Abilities now use mana</p>
+                </div>
+                <div class="activity-entry">
+                    <h3>April 10, 2025 - New Healthbar asset pack and talent system bug fixes</h3>
+                    <p>-Added a healthbar asset pack to improve UI visuals</p>
+                    <p>-Abilities now duplicate when dragged from talentTree, allowing player to have multiple on actionbars (still share cooldown)</p>
+                    <p>-dropping it somewhere will delete the instance</p>
+                    <p>created OnTop object that can be used to force UI elements to be on top of everything else</p>
+                </div>
+                <div class="activity-entry">
+                    <h3>March 30, 2025 - Partial ability implementation</h3>
+                    <p>-Added ActionBar </p>
+                    <p>-Added TalentTree </p>
+                    <p>-Updated MagicAbilityScript</p>
+                    <p>-added drag and drop</p>
+                    <img src="images/image26.png" alt="Image of the talent tree and action bar" >
+                </div>
+                <div class="activity-entry">
+                    <h3>March 28, 2025 - Viking helmet fix and spawns</h3>
+                    <p>-Added more enemy spawn points</p>
+                    <p>-Added viking helmet to loot table for enemies</p>
+                    <p>-Fixed stats bug</p>
+                    <p>-Fixed homing bug</p>
+                </div>
+                <div class="activity-entry">
+                    <h3>March 27, 2025 - Added new helmet, added ability, and more bug fixes</h3>
+                    <p>-Added a viking helmet as an equippable item</p>
+                    <p>-Added a Fireball ability to test out the architecture for abilities</p>
+                    <p>-Fixed bug where changing weapons causes next weapon to attack</p>
+                    <p>-Fixed bug where swapping weapons mid animation locked the staff to always be on CD</p>
+                </div>
+                <div class="activity-entry">
+                    <h3>March 26, 2025 - Enemy Update, Thunderfury, Character Panel and Bug fixes</h3>
+                    <p>-Added Thunderfury as an item to the game</p>
+                    <p>-Added aggro range to the enemies, so when player is in range they get targeted</p>
+                    <p>-Fixed bug where you could hit aggro range of the enemy with spells and melee</p>
+                    <p>-Fixed bug where unpausing with escape would keep inventory UI active</p>
+                    <img src="images/image25.png" alt="Image of the players inventory and character panel open" >
+                </div>
+                <div class="activity-entry">
+                    <h3>March 25, 2025 - Weapon Update</h3>
+                    <p>-Added a multiweapon system</p>
+                    <p>-Weapons now control what attack the player does when left clicking</p>
+                    <p>--staff of jordan shoots a fire ball</p>
+                </div>
+                
+                <div class="activity-entry">
+                    <h3>March 25, 2025 - Bug Fixes and Weapon Update</h3>
+                    <p>-Fixed bug where staff of jordan was massive</p>
+                    <p>-Fixed bug that prevented the player from unequipping items</p>
+                    <p>-Added sword as a drop item and added staff and sword icons</p>
                 </div>
                 
                 <div class="activity-entry">
