@@ -44,11 +44,39 @@
             <section>
                 <h2>Activity Log</h2>
                 <div class="activity-entry">
+                    <h3>September 22, 2025 - Ability Refactored</h3>
+                    <h4>CHANGES</h4>
+                    <ul>
+                        <li>Moved check for cooldown and instantiation to ability SO</li>
+                        <li>MagicAbilityScript (FireballScript) does not do math for damage anymore, ability SO does</li>
+                        <li>Refactored Ability SO, it now has references to playerStats, ability Icon and cooldown. It also tries casting and sets itself to be on CD</li>
+                        <li>Added TalentSlotHandler which automatically fills in icons, abilities and other things required for the talent slot to work</li>
+                    </ul>
+                    <h4>BUG FIXES</h4>
+                    <ul>
+                        <li>Fixed bug where abilities did more damage than they should have</li>
+                    </ul>
+                </div>
+                <div class="activity-entry">
+                    <h3>September 21, 2025 - Bug fixes + Exit Button</h3>
+                    <h4>CHANGES</h4>
+                    <ul>
+                        <li>Added exit game button in the main menu</li>
+                        <li>Added in-game debugger console</li>
+                    </ul>
+                    <h4>BUG FIXES</h4>
+                    <ul>
+                        <li>Fixed bug where all dropped items were retained in the manager scene</li>
+                        <li>Fixed bug where loading screen was open after loading world scene in build</li>
+                    </ul>
+                </div>
+                <div class="activity-entry">
                     <h3>September 20, 2025 - Wooden staff update</h3>
                     <h4>CHANGES</h4>
                     <ul>
                         <li>Refactored logic for beams, beams now are handled by the ScriptableObject</li>
                         <li>Wooden staff now has additional rarities: Uncommon, Rare, Epic, Legendary</li>
+                        <li>Added a Quit button to the main menu</li>
                     </ul>
                 </div>
                 <div class="activity-entry">
