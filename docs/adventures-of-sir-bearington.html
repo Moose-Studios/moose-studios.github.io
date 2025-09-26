@@ -44,6 +44,21 @@
             <section>
                 <h2>Activity Log</h2>
                 <div class="activity-entry">
+                    <h3>September 26, 2025 - New Character Scene</h3>
+                    <h4>CHANGES</h4>
+                    <ul>
+                        <li>Added new Player Scene, contains player and game manager object. Now player will not be despawned when entering other maps</li>
+                    </ul>
+                    <h4>BUG FIXES</h4>
+                    <ul>
+                        <li>fixed bug where going to main menu and back into game would cause refernece to talent text to be broken because callback was never removed</li>
+                        <li>UpdateMana and UpdateHealth now check if callbacks are null</li>
+                        <li>Added logic to loading scene to stop time while scenes are loading. Player was falling through the ground because player would load before the world</li>
+                    </ul>
+                    <h4>SCREENSHOTS</h4>
+                    <img src="images/image47.png" alt="image of the scenes loaded when playing">
+                </div>
+                <div class="activity-entry">
                     <h3>September 23, 2025 - player stats and xp scaling update</h3>
                     <h4>CHANGES</h4>
                     <ul>
