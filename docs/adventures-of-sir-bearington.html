@@ -45,6 +45,126 @@
                 <h2>Activity Log</h2>
                 <div class="activity-entry">
                     <h3>
+                        version: 0.1.24 <br>
+                        November 08, 2025 - item and resource balance
+                    </h3>
+                    <h4>CHANGES</h4>
+                    <ul>
+                        <li>mana cost for abilities will scale based on players intellect</li>
+                        <li>Added Legendary Mage Hat:</li>
+                        <ul>
+                            <li>-250 Health</li>
+                            <li>5 health / sec</li>
+                            <li>50 INT</li>
+                            <li>150 mana</li>
+                            <li>15 mana / sec</li>
+                        </ul>
+                        <li>Staff of Jordan update</li>
+                        <ul>
+                            <li>Armor: 225 -> 25</li>
+                            <li>HP: 1500 -> -200</li>
+                            <li>HP/sec: 115 -> 15</li>
+                            <li>INT: 1250 -> 50</li>
+                            <li>mana: 1500 -> 150</li>
+                            <li>mana/sec: 600 -> 15</li>
+                        </ul>
+                        <li>player now has armor scaling which reduces damage taken. 1 point = 1% damage reduction against enemies of same level</li>
+                    </ul>
+                    <h4>BUG FIXES</h4>
+                    <ul>
+                        <li>fixed bug where healing ability was trying to access an object that didnt exist</li>
+                    </ul>
+                </div>
+                <div class="activity-entry">
+                    <h3>
+                        version: 0.1.23 <br>
+                        November 07, 2025 - Loot update
+                    </h3>
+                    <h4>CHANGES</h4>
+                    <ul>
+                        <li>Added EntityUniqueLootTable to enemies that will only drop 1 item from a list</li>
+                        <li>Added EntityLootTable which rolls on every item in the list</li>
+                        <li>Added Killable script, its responsible for containing the onDeath callback</li>
+                        <li>Staff of Jordan changes</li>
+                        <ul>
+                            <li>Int Modifier: 35 -> 1250</li>
+                            <li>Strength Modifier: 0 -> 225</li>
+                            <li>Armor Modifier: 1 -> 115</li>
+                            <li>Health Modifier: 0 -> 430</li>
+                            <li>Mana Modifier: 0 -> 1500</li>
+                            <li>Health Regen Modifier: 0 -> 115</li>
+                            <li>Mana Regen Modifier: 0 -> 600</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="activity-entry">
+                    <h3>
+                        version: 0.1.22 <br>
+                        November 04, 2025 - Screen Error SCT
+                    </h3>
+                    <h4>CHANGES</h4>
+                    <ul>
+                        <li>UI now shows if the player doesnt have enough mana</li>
+                        <li>UI now shows if the player doesnt have a target</li>
+                    </ul>
+                    <h4>SCREENSHOTS</h4>
+                    <img src="images/image62.png">
+                    <img src="images/image63.png">
+                </div>
+                <div class="activity-entry">
+                    <h3>
+                        version: 0.1.21 <br>
+                        November 04, 2025 - Equipped weapon placement
+                    </h3>
+                    <h4>CHANGES</h4>
+                    <ul>
+                        <li>Equipped staffs are now on the players back not in hand</li>
+                    </ul>
+
+                </div>
+                <div class="activity-entry">
+                    <h3>
+                        version: 0.1.20 <br>
+                        November 02, 2025 - Github Actions
+                    </h3>
+                    <h4>CHANGES</h4>
+                    <ul>
+                        <li>Added Github actions to create ticket in website board to track version changes</li>
+                    </ul>
+                </div>
+                <div class="activity-entry">
+                    <h3>
+                        version: 0.1.12 <br>
+                        November 01, 2025 - player stats cleanup
+                    </h3>
+                    <h4>CHANGES</h4>
+                    <ul>
+                        <li>Added GetPlayerStats to PlayerScript so there is a way to get player stats</li>
+                        <li>Cleaned up PlayerStats</li>
+                        <ul>
+                            <li>Added playerIsDead bool</li>
+                            <li>Removed player GameObject reference</li>
+                            <li>Enemy now checks if player is dead, and stops attacking/following</li>
+                            <li>GameReferences now tracks spawn location and has a playerDied callback func</li>
+                            <li>PlayerInfoHandler now handles respawning the player</li>
+                            <li>Added RespawnPoint object</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="activity-entry">
+                    <h3>
+                        version: 0.1.11 <br>
+                        November 01, 2025 - Tooltips
+                    </h3>
+                    <h4>CHANGES</h4>
+                    <ul>
+                        <li>tooltips now have an item level text</li>
+                        <li>main menu version text is now automatically updated</li>
+                        <li>added item level calculation to equipment</li>
+                    </ul>
+                </div>
+                <div class="activity-entry">
+                    <h3>
                         version: 0.1.10 <br>
                         November 01, 2025 - Christmas Update
                     </h3>
