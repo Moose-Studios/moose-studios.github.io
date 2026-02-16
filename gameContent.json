@@ -1,0 +1,59 @@
+
+{
+  "espresso-express": {
+    "fullDescription": "In Espresso Express, you step into the shoes of a rookie barista tasked with managing the busiest coffee stall in the Grand Junction Station. As locomotives roar past, you must balance brewing complexity, customer patience, and limited resources. Upgrade your grinders, discover secret bean blends, and unlock a heartwarming story about the commuters who pass through every day.",
+    "updates": [
+      {
+        "version": "v1.1.0",
+        "date": "Nov 12, 2023",
+        "title": "The Holiday Roast",
+        "changes": [
+          "Added festive decorations to the station",
+          "New seasonal drink: Peppermint Mocha",
+          "Fixed a bug where the espresso machine would stop steaming during rush hour",
+          "Optimized loading times for mobile devices"
+        ]
+      },
+      {
+        "version": "v1.0.5",
+        "date": "Oct 05, 2023",
+        "title": "Balance & Beans",
+        "changes": [
+          "Adjusted difficulty curves for levels 10-15",
+          "Improved drag-and-drop sensitivity",
+          "Added new character: The Grumpy Conductor"
+        ]
+      }
+    ]
+  },
+  "moose-mysteries": {
+    "fullDescription": "The pines hold secrets, and Detective Antlers is the only one who can sniff them out. Moose Mysteries is a point-and-click adventure game blending classic noir atmosphere with quirky woodland humor. Explore hand-drawn environments, gather clues from local wildlife, and solve the mystery of the Missing Maple Syrup. Every choice you make impacts the forest ecosystem.",
+    "updates": [
+      {
+        "version": "v0.9.2 Beta",
+        "date": "Jan 20, 2024",
+        "title": "Forest expansion",
+        "changes": [
+          "Opened the 'Maple Grove' area for exploration",
+          "Implemented a new dialogue system with wildlife",
+          "Visual overhaul of the inventory UI"
+        ]
+      }
+    ]
+  },
+  "bean-counter": {
+    "fullDescription": "Forget gold and silver—in this world, coffee beans are the only currency that matters. Bean Counter is a deck-building roguelike where your combat power is determined by your economic prowess. Play your cards right to invest in futures, dodge taxes from the Caffeine King, and build a trading empire from a single burlap sack.",
+    "updates": [
+      {
+        "version": "Alpha v0.1.0",
+        "date": "Feb 01, 2024",
+        "title": "Initial Brew",
+        "changes": [
+          "First playable prototype launched",
+          "Basic market fluctuation mechanics implemented",
+          "3 starter bean classes added (Light, Medium, Dark Roast)"
+        ]
+      }
+    ]
+  }
+}

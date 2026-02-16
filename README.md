@@ -1,2 +1,7 @@
-# moose-studios.github.io
-moose studios website: [moose-studios.github.io](https://moose-studios.github.io/)
+running code locally:
+- npm install
+- npm run dev
+
+deploying updates to webpage
+- push changes to branch
+- npm deploy
