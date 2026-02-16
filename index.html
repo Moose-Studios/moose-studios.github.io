@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moose Studios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              coffee: {
+                50: '#faf7f5',
+                100: '#f3ede7',
+                200: '#e5dcd3',
+                300: '#d2c2b5',
+                400: '#bc9f8e',
+                500: '#a8826b',
+                600: '#8c6652',
+                700: '#725142',
+                800: '#5e4339',
+                900: '#4d3831',
+                950: '#2a1d19',
+              },
+              cream: '#F9F5EB',
+              moose: '#603c27'
+            },
+            fontFamily: {
+              sans: ['Fredoka', 'sans-serif'],
+              hand: ['Patrick Hand', 'cursive'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F9F5EB;
+        color: #4d3831;
+      }
+      .coffee-gradient {
+        background: linear-gradient(135deg, #2a1d19 0%, #5e4339 100%);
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #e5dcd3;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #8c6652;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #725142;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
