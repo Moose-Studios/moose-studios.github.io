@@ -1,6 +1,6 @@
 {
   "name": "moose-studios-portfolio",
-  "homepage": "https://moose-studios.github.io/moose-studios.github.io",
+  "homepage": "https://AlexeyKazinich.github.io/moose-studios.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,8 +13,9 @@
   },
   "dependencies": {
     "@google/genai": "^1.33.0",
-    "react-dom": "^19.2.3",
-    "react": "^19.2.3"
+    "gh-pages": "^6.3.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
